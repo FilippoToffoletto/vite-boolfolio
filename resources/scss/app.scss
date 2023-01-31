@@ -1,0 +1,59 @@
+@import '~bootstrap/scss/bootstrap';
+
+main{
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+
+.main-wrapper{
+    height: calc(100vh - 56px);
+}
+
+
+.ft-nav-link{
+    color: black;
+    font-size: .9rem;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    margin-right: -10px;
+    a{
+        text-decoration: none;
+        font-style: bold;
+        i{
+            margin-right: 2px;
+        }
+    }
+}
+
+.container{
+    img{
+        height: 100%;
+    }
+}
+
+
+.table{
+    .ft-action-btn{
+        display: flex;
+        padding: 25% 10px;
+    }
+    i{
+        color: white;
+        display: inline-block;
+    }
+    a{
+        color: black;
+        font-style: none;
+        text-decoration: none;
+        &:hover{
+            color: #FFC009;
+        }
+    }
+}
+
+.show-container{
+    img{
+        width: 40%;
+    }
+}
