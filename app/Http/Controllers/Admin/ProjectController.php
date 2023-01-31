@@ -65,6 +65,7 @@ class ProjectController extends Controller
             $project_data['cover_image_original'] = $request->file('cover_image')->getClientOriginalName();
             //salvo il file sul filesystem e il path in project_data image
             $project_data['cover_image'] = Storage::put('uploads', $project_data['cover_image']);
+            // dd($project_data);
         }
 
 

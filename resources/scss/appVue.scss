@@ -18,8 +18,17 @@ body{
 
 .post-box{
     margin: 20px 0;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    h3{
+        margin-bottom: 10px;
+    }
+
 }
 
-h3{
-    margin-bottom: 20px;
+.paginator{
+    button{
+        padding: 5px 10px;
+        margin-right: 5px;
+    }
 }

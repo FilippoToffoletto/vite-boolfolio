@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function index(){
-        $projects = Project::all();
+        $projects = Project::with(['category'])->orderBy('id', 'desc')->paginate(10);
 
         return response()->json(compact('projects'));
     }
