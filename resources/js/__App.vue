@@ -48,7 +48,7 @@ export default {
 
 <template>
 
-    <div class="container">
+    <div class="">
 
         <h1>Elenco Progetti</h1>
 
