@@ -1,7 +1,12 @@
 <script>
 
+import Header from './partials/Header.vue';
+
 export default{
-    name:'App'
+    name:'App',
+    components:{
+        Header
+    }
 }
 
 </script>
@@ -9,17 +14,19 @@ export default{
 
 <template>
 
+    <Header />
 
 
-    <!-- qui vengono caricati i componenti delle pagine delle rotte-->
-    <router-view>
-
-    </router-view>
+    <main class="container">
+        <router-view></router-view>
+    </main>
 
 </template>
 
 
 
-<style>
+<style lang="scss">
+
+
 
 </style>
