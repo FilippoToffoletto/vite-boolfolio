@@ -42,3 +42,10 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+//rotta per tutti i componenti vue da mettere dopo tutte le altre rotte
+
+Route::get('{any?}',function(){
+    return view('guest.home');
+})->where('any','.*')->name('home');
